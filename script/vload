@@ -53,6 +53,8 @@ EOF
         exit 1
     fi
 
+    
+    rm -f "$VAD/$data_file"
     # Status message
     echo "Loading finished! Check ${LOGFILE} for details."
     exit 0
