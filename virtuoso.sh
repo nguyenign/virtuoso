@@ -98,6 +98,10 @@ then
     sleep 10
     /script/vload /dataToLoad RefSpatialComplet.ttl http://data.alegoria-project.fr/id/ign/unitesadministratives/ /logs/vload.log "$pwd"
     sleep 10
-    #/script/vload /dataToLoad CommunesWithinCartes.ttl http://data.alegoria.fr/id/geotheque/extrait/09122019/ /logs/vload.log "$pwd"
+    /script/vload /dataToLoad CommunesWithinCartes.ttl http://data.alegoria.fr/id/geotheque/extrait/09122019/ /logs/vload.log "$pwd"
 fi
+
+#/bin/bash
+
+while true; do sleep 1; done
 

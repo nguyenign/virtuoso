@@ -1,0 +1,9 @@
+Run container with a script in background with below command
+
+docker run -d  image:tag /bin/sh /root/my_script.sh
+
+Check the container id by docker ps command
+
+Then verify the script is executing or not on container
+
+docker exec <id> /bin/sh -l -c "ps aux"

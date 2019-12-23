@@ -39,7 +39,7 @@ COPY clean-logs.sh /clean-logs.sh
 
 # Add startup script
 COPY virtuoso.sh /virtuoso.sh
-
+RUN chmod +x /virtuoso.sh 
 
 #alegoria staff
 COPY dataToLoad /dataToLoad
@@ -49,8 +49,10 @@ RUN mkdir -p /logs
 
 
 VOLUME /data
-WORKDIR /data
+#WORKDIR /data
 EXPOSE 8890
 EXPOSE 1111
-
+WORKDIR /
 CMD ["/bin/bash", "/virtuoso.sh"]
+
+
